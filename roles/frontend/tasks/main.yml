@@ -1,7 +1,5 @@
-#- name: test
- # ansible.builtin.debug:
- #   msg: hello from frontend
--
+
+
 - name: Install nginx
   ansible.builtin.yum:
     name: httpd
@@ -24,7 +22,7 @@
 
 - name: Copy Roboshop config file to Nginx
   ansible.builtin.copy:
-    src: /srv/myfiles/foo.conf
+    src: roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
 
 
