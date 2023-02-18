@@ -3,10 +3,8 @@
     msg: hello from frontend
 - name: Install nginx
   ansible.builtin.yum:
-    name: nginx
+    name: httpd
     state: installed
-  register: out
 
-- name: out
-  debug:
-    msg: "{{out}}"
+
+
