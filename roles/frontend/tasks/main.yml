@@ -19,7 +19,7 @@
 - name: Download Frontend App Content
   ansible.builtin.unarchive:
     src: https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
-    path: /usr/share/nginx/html
+    dest: /usr/share/nginx/html
     remote_src: yes
 
 
