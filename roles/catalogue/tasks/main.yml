@@ -28,7 +28,7 @@
 
 - name: Install NOdeJS dependencies
   community.general.npm:
-    name: /app
+    path: /app
     state: latest
 
 - name: copy systemd file
