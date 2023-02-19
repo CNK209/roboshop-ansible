@@ -3,7 +3,7 @@
 
 - name: Install NOdeJS
   ansible.builtin.yum:
-    name: nodeJS
+    name: nodejs
     state: installed
 
 - name: Add Application User
