@@ -1,5 +1,5 @@
 - name: Roboshop Setup
-  hosts: 172.31.13.15
+  hosts: all
   become: yes
   roles:
     - "{{ROLE_NAME}}"
