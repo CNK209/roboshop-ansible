@@ -45,5 +45,6 @@
     state: restarted
 
 - name: load schema
-  import_tasks: mongodb-schema.yml
+  import_tasks: "{{schema_type}}-schema.yml"
+  when: schema-load
 
