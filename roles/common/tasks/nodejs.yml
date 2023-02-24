@@ -10,7 +10,7 @@
     state: latest
 
 - name: systemd setup
-  ansible.builtin.include-tasks: "systemd.yml"
+  ansible.builtin.include_tasks: "systemd.yml"
 
 - name: load schema
   ansible.builtin.include_tasks: "{{schema_type}}-schema.yml"
