@@ -1,6 +1,6 @@
 - name: Import NodeJS
   ansible.builtin.import_role:
-    name: common
+    name: common.groovy
     tasks_from: nodejs
 
 
